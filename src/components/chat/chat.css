@@ -10,6 +10,19 @@
     margin-left:auto;
     background-image:url(fondo.png);
 }
+li{
+    margin-bottom:4px;
+    margin-right:3%;
+    margin-left:3%;
+}
+ul{
+    width:100%;
+    height:fit-content;
+    margin-right:0px;
+    margin-left:auto;
+    margin-bottom:10px;
+    margin-top:auto;
+}
 .UserImg{
     margin-top:auto;
     margin-bottom:auto;
@@ -27,18 +40,22 @@
 .header-chat{
     display:flex;
     background-color:#202c33;
-    height:40px;
-    top:0px;
+    height:60px;
 }
 .body-chat{
-    height:calc(100% - 80px);
+    display:flex;
+    top:0px;
+    height:calc(100% - 120px);
+    overflow:scroll;
+    position:relative;
 }
 .bottom-chat{
     display:flex;
     background-color:#202c33;
-    height:40px;
+    height:60px;
     margin-top:auto;
     margin-bottom:0px;
+    
 }
 .btn-send{
     margin-bottom:auto;
@@ -72,6 +89,68 @@
     width:30px;
     margin-left:10px;
     
+}
+.Me{
+    display:flex;
+    color:white;
+    background-color:#047c66;
+    position:relative;
+    margin-right:0px;
+    margin-left:auto;
+    max-width:300px;
+    min-width:120px;
+    min-height:50px;
+    max-height:300px;
+    border-radius:7px;
+}
+.Other{
+    display:flex;
+    color:white;
+    background-color:#3f5663;
+    position:relative;
+    margin-right:auto;
+    margin-left:0px;
+    max-width:300px;
+    min-width:120px;
+    min-height:50px;
+    max-height:300px;
+    border-radius:7px;
+}
+.Other span{
+    position:absolute;
+    margin-top:7px;
+    margin-left:7px;
+    min-height:50px;
+    max-height:max-content;
+    min-width:120px;
+    max-width:max-content;
+}
+.Other div{
+    font-size:small;
+    position:absolute;
+    right:20px;
+    bottom:2px;
+}
+.Me span{
+    position:absolute;
+    margin-top:7px;
+    margin-left:7px;
+    min-height:50px;
+    max-height:max-content;
+    min-width:120px;
+    max-width:max-content;
+}
+.Me div{
+    font-size:small;
+    position:absolute;
+    right:20px;
+    bottom:2px;
+}
+.username-chat p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:12px;
+    bottom:0px;
+    color:rgb(150, 141, 141);
 }
 @media screen and (min-width: 1355px) {
     .chat{ 

@@ -16,8 +16,8 @@ export default function Modal(props){
                     </div>
                     <div className="modal-body">
                         <div className="modal-info">
-                            This chat application was created to learn how <text className="send">the send message </text>
-                            buttons works and <text className="send">how to display in the screen.</text>
+                            This chat application was created to learn how <span className="send">the send message </span>
+                            buttons works and <span className="send">how to display in the screen.</span>
                         </div>
                         <div className="modal-copyrights">
                             ⒸCopyRight all rights reserved 2022

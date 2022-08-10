@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Modal from './components/modal/modal';
+import Chat from './components/chat/Chat';
+import './app.css'
+export default function App(){
+  const [disabled, setDisabled] = useState(true);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const enabledChat = (e)=>{
+    e.preventDefault();
+    setDisabled((oldDisabled)=>{
+      return !oldDisabled;
+    })
+  }
+  return(
+    <div className="app">
+        <Chat/>
+        {disabled && <Modal onSubmit={(e) =>enabledChat(e)}/>}
     </div>
-  );
+  )
 }
-
-export default App;
